@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="MVVMLightDemo.View.UI2View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MVVMLightDemo.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="200">
+    <Grid>
+        <Button Content="UI2向日志界面传递信息" Command="{Binding BtnCommand}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="37.014,0,0,10"/>
+        <TextBox x:Name="textBox" Height="17.313" Margin="58.358,26.493,25.224,0" TextWrapping="Wrap"     
+                 FontFamily="微软雅黑"  Text="{Binding Name}"   FontSize="14" VerticalAlignment="Top" d:LayoutOverrides="Height, TopMargin, BottomMargin"/>
+    </Grid>
+</UserControl>
